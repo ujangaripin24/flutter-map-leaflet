@@ -32,6 +32,13 @@ class SidebarLayout extends StatelessWidget {
               Navigator.of(context).pushNamed('/about');
             },
           ),
+          ListTile(
+            leading: Icon(Icons.map_outlined),
+            title: Text('Mapbox View'),
+            onTap: () {
+              Navigator.of(context).pushNamed('/mapboxview');
+            },
+          ),
           Divider(),
           ListTile(
             leading: Icon(Icons.exit_to_app_outlined),
