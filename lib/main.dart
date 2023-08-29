@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'screen/about.dart';
 import 'screen/home.dart';
 import 'layout/sidebar.dart';
-import 'screen/mapboxview.dart';
+import 'screen/leafletmarker.dart';
+import 'screen/leafletview.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,7 +17,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/home': (context) => HomeScreen(),
         '/about': (context) => AboutScreen(),
-        '/mapboxview': (context) => MapboxViewScreen(),
+        '/leafletview': (context) => LeafletView(),
+        '/leafletmarker': (context) => LeafletMarker(),
       },
     );
   }
