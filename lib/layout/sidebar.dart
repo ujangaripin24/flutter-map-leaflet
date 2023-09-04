@@ -34,37 +34,37 @@ class SidebarLayout extends StatelessWidget {
           ),
           ListTile(
             leading: Icon(Icons.map_outlined),
-            title: Text('Mapbox View'),
+            title: Text('Open Street Map View'),
             onTap: () {
               Navigator.of(context).pushNamed('/leafletview');
             },
           ),
           ListTile(
             leading: Icon(Icons.pin_drop_outlined),
-            title: Text('Mapbox Marker'),
+            title: Text('Open Street Map Marker'),
             onTap: () {
               Navigator.of(context).pushNamed('/leafletmarker');
             },
           ),
           ListTile(
             leading: Icon(Icons.view_sidebar_outlined),
-            title: Text('Mapbox Drawer'),
+            title: Text('Open Street Map Drawer'),
             onTap: () {
               Navigator.of(context).pushNamed('/leafletdrawer');
             },
           ),
           ListTile(
             leading: Icon(Icons.gps_fixed_outlined),
-            title: Text('Mapbox GPS'),
+            title: Text('Open Street Map GPS'),
             onTap: () {
               Navigator.of(context).pushNamed('/leafletgps');
             },
           ),
           ListTile(
             leading: Icon(Icons.route_outlined),
-            title: Text('Mapbox Pay'),
+            title: Text('Mapbox View'),
             onTap: () {
-              Navigator.of(context).pushNamed('/leafetgpspay');
+              Navigator.of(context).pushNamed('/mapboxview');
             },
           ),
           Divider(),
