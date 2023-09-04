@@ -10,6 +10,29 @@ class LeafletMarker extends StatefulWidget {
 }
 
 class _LeafletMarkerState extends State<LeafletMarker> {
+  final List<Map<String, dynamic>> markerLokasi = [
+    {
+      'nama': 'Tempat 1',
+      'latitude': -6.933491973432126,
+      'longitude': 107.63155674812538,
+    },
+    {
+      'nama': 'Tempat 2',
+      'latitude': -6.908852821195481,
+      'longitude': 107.60795488967875,
+    },
+    {
+      'nama': 'Tempat 3',
+      'latitude': -6.926992199307122,
+      'longitude': 107.58541892161332,
+    },
+    {
+      'nama': 'Tempat 4',
+      'latitude': -6.926992199307568,
+      'longitude': 107.58541892161965,
+    },
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,18 +51,36 @@ class _LeafletMarkerState extends State<LeafletMarker> {
               userAgentPackageName: 'dev.fleaflet.flutter_map.example',
             ),
             MarkerLayer(
-              markers: [
-                Marker(
-                  point: LatLng(-6.914744, 107.609810),
-                  width: 80,
-                  height: 80,
-                  builder: (context) => Icon(Icons.location_pin),
-                ),
-              ],
+              markers: _buildMarkersFromJsonData(),
             ),
           ],
         ),
       ),
     );
+  }
+
+  List<Marker> _buildMarkersFromJsonData() {
+    List<Marker> markers = [];
+
+    markerLokasi.forEach((lokasi) {
+      var nama = lokasi['nama'];
+      var latitude = lokasi['latitude'];
+      var longitude = lokasi['longitude'];
+
+      markers.add(
+        Marker(
+          point: LatLng(latitude, longitude),
+          width: 80,
+          height: 80,
+          builder: (context) => Column(
+            children: [
+              Icon(Icons.location_pin),
+            ],
+          ),
+        ),
+      );
+    });
+
+    return markers;
   }
 }
