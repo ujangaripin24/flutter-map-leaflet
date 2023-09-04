@@ -47,10 +47,17 @@ class SidebarLayout extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: Icon(Icons.route_outlined),
+            leading: Icon(Icons.view_sidebar_outlined),
             title: Text('Mapbox Drawer'),
             onTap: () {
               Navigator.of(context).pushNamed('/leafletdrawer');
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.gps_fixed_outlined),
+            title: Text('Mapbox GPS'),
+            onTap: () {
+              Navigator.of(context).pushNamed('/leafletgps');
             },
           ),
           Divider(),

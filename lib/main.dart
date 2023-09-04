@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluuter_mapbase_trainning/screen/leafletmarkergps.dart';
 import 'screen/about.dart';
 import 'screen/home.dart';
 import 'layout/sidebar.dart';
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
         '/leafletview': (context) => LeafletView(),
         '/leafletmarker': (context) => LeafletMarker(),
         '/leafletdrawer': (context) => LeafletMarkerDrawer(),
+        '/leafletgps': (context) => LeafletMarkerGPS(),
       },
     );
   }
