@@ -28,8 +28,8 @@ class _LeafletMarkerState extends State<LeafletMarker> {
     },
     {
       'nama': 'Tempat 4',
-      'latitude': -6.926992199307568,
-      'longitude': 107.58541892161965,
+      'latitude': -6.947353191849231,
+      'longitude': 107.59505160796726,
     },
   ];
 

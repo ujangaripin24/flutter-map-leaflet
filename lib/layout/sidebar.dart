@@ -60,6 +60,13 @@ class SidebarLayout extends StatelessWidget {
               Navigator.of(context).pushNamed('/leafletgps');
             },
           ),
+          ListTile(
+            leading: Icon(Icons.route_outlined),
+            title: Text('Mapbox Pay'),
+            onTap: () {
+              Navigator.of(context).pushNamed('/leafetgpspay');
+            },
+          ),
           Divider(),
           ListTile(
             leading: Icon(Icons.exit_to_app_outlined),
