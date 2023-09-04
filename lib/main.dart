@@ -3,6 +3,7 @@ import 'screen/about.dart';
 import 'screen/home.dart';
 import 'layout/sidebar.dart';
 import 'screen/leafletmarker.dart';
+import 'screen/leafletmarkerdrawer.dart';
 import 'screen/leafletview.dart';
 
 void main() {
@@ -19,6 +20,7 @@ class MyApp extends StatelessWidget {
         '/about': (context) => AboutScreen(),
         '/leafletview': (context) => LeafletView(),
         '/leafletmarker': (context) => LeafletMarker(),
+        '/leafletdrawer': (context) => LeafletMarkerDrawer(),
       },
     );
   }
