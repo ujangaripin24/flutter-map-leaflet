@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fluuter_mapbase_trainning/screen/mapboxview.dart';
+import 'screen/mapboxview.dart';
 import 'screen/leafletmarkergps.dart';
 import 'screen/about.dart';
 import 'screen/home.dart';
@@ -7,8 +7,10 @@ import 'layout/sidebar.dart';
 import 'screen/leafletmarker.dart';
 import 'screen/leafletmarkerdrawer.dart';
 import 'screen/leafletview.dart';
+import 'package:mapbox_gl/mapbox_gl.dart';
 
 void main() {
+  // MapboxGl.registerWith();
   runApp(MyApp());
 }
 

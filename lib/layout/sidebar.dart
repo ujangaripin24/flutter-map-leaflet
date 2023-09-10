@@ -62,7 +62,7 @@ class SidebarLayout extends StatelessWidget {
           ),
           ListTile(
             leading: Icon(Icons.route_outlined),
-            title: Text('Mapbox View'),
+            title: Text('Open Street Map Routing Machine'),
             onTap: () {
               Navigator.of(context).pushNamed('/mapboxview');
             },
