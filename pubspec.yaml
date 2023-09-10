@@ -40,8 +40,8 @@ dependencies:
   flutter_latlong: ^1.0.3
   geolocator: ^10.0.0
   location: ^5.0.3
+  flutter_mapbox_navigation: ^0.1.7
   mapbox_gl: ^0.16.0
-  mapbox_api: ^1.0.0
 
 dev_dependencies:
   flutter_test:
